@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<title>Javascript Validation</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="container">
+
+			<div class="row">
+				<form action="https://github.com/dawalasatish" class="form-horizontal" name="myForm" method="get" >
+					<div class="col-md-6 m-t-30 bdr">
+						<h2>Form Validation</h2>
+						<div class="form-group ">
+	      					<label class="control-label col-md-offset-4 col-md-2" for="email">Email:</label>
+	      					<div class="col-md-6 ">
+	        					<input type="email" class="form-control" placeholder="Enter email" name="email"><span id="mail"></span>
+	      					</div>
+	    				</div>
+	    				<div class="form-group">
+	      					<label class="control-label col-md-offset-4 col-md-2" for="password">Password:</label>
+	      					<div class="col-md-6 ">
+	        					<input type="password" class="form-control" placeholder="Enter Password" name="password">
+	      					</div>
+	    				</div>
+	    				
+	    				<div class="form-group">
+	      					<label class="control-label col-md-offset-4 col-md-2" for="email">Confirm Password:</label>
+	      					<div class="col-md-6 ">
+	        					<input type="password" class="form-control" placeholder="Enter Confirm Password" name="confirm_password">
+	      					</div>
+	    				</div>
+	    				<div class="form-group">
+	      					<label class="control-label col-md-offset-4 col-md-2" for="Gender">Gender:</label>
+	      					<div class="col-md-6 radio">
+	        					<label><input type="radio" name="gender">Male</label>
+     							 <label><input type="radio" name="gender">Female</label>
+	      					</div>
+	    				</div>
+
+						<div class="form-group">
+	      					<label class="control-label col-md-offset-4 col-md-2">Qualification:</label>
+	      					<div class="col-md-6">
+	        					<select id="qualification" name="qualification"  class="form-control">
+    								<option>Choose a number</option>
+								</select>
+	      					</div>
+	    				</div>
+	    				<div class="form-group">
+	      					<label class="control-label col-md-offset-4 col-md-2" for="subscribe">Subscribe:</label>
+	      					<div class="col-md-6 ">
+	        					<div class="checkbox">
+      									<label><input type="checkbox" name="subscribe" value="">Your interest to Subscribe our channel</label>
+    								</div>
+	      					</div>
+	    				</div>
+	    				<div class="form-group">
+	      					<label class="control-label col-md-offset-4 col-md-2" for="email">Address:</label>
+	      					<div class="col-md-6 ">
+	        					<textarea class="form-control" name="address"></textarea>
+	      					</div>
+	    				</div>
+	    				<div class="form-group">        
+      						<div class="col-sm-offset-6 col-sm-6">
+        						<button type="button" class="btn btn-primary" onclick="validateForm()">Submit</button>
+      						</div>
+    					</div>
+    				</div>
+				</form>
+			</div>
+		</div>
+	</div>
+		<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="bootstrap.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
